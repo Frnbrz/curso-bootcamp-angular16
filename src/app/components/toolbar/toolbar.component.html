@@ -1,0 +1,9 @@
+<div class="toolbar-container">
+  <p>Curso Bootcamp Angular</p>
+  <app-custom-button (clickEvent)="openDialog()" [className]="'outline'"
+    >Abrir modal</app-custom-button
+  >
+</div>
+<app-custom-dialog>
+  <app-user-form />
+</app-custom-dialog>
