@@ -1,0 +1,7 @@
+{
+  "exportall.config.relExclusion": [
+    "/src/app/components/index.ts",
+    "/src/app/components/user-form"
+  ],
+  "exportall.config.folderListener": ["/src/app/components/user-form"]
+}
