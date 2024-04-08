@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core'
+import { UserService } from './services'
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'curso-bootcamp-angular16';
+  userService = inject(UserService)
+  userValue = this.userService.getUserFormState()
 }
