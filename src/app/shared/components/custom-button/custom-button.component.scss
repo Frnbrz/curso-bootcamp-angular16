@@ -1,0 +1,49 @@
+button {
+  cursor: pointer;
+  outline: none;
+
+  &.outline {
+    position: relative;
+    z-index: 3;
+    background: transparent;
+    color: var(--secondary);
+    font-size: 14px;
+    border-color: var(--secondary);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 22px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &.outline:hover {
+    color: var(--text-light);
+    background: var(--primary-dark);
+    border-color: white;
+    transition: all 0.2s linear;
+  }
+
+  &.outline:active {
+    border-radius: 22px;
+  }
+
+  &.dark {
+    background: var(--dark);
+    color: var(--text-light);
+    font-size: 14px;
+    border: none;
+    border-radius: 22px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
