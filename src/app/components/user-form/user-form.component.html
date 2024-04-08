@@ -1,0 +1,7 @@
+<form [formGroup]="form">
+  <label for="name">Name</label>
+  <input type="text" formControlName="name" id="name" />
+  <app-custom-button [className]="'outline dark'" (clickEvent)="submit()"
+    >Aceptar</app-custom-button
+  >
+</form>
