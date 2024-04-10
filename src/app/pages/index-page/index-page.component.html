@@ -1,0 +1,4 @@
+<ng-container *ngFor="let curso of cursos">
+  <p>{{ curso.name }}</p>
+  <a [routerLink]="curso.href">Ver curso</a>
+</ng-container>
