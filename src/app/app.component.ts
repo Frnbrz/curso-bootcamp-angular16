@@ -1,5 +1,4 @@
-import { Component, inject } from '@angular/core'
-import { UserService } from './services'
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'app-root',
@@ -7,6 +6,5 @@ import { UserService } from './services'
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  userService = inject(UserService)
-  userValue = this.userService.getUserFormState()
+
 }
